@@ -1,0 +1,294 @@
+html {
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+}
+
+body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ecf0f2;
+  /*background-color: #ffffff;*/
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #97a3aa
+}
+
+.dialogPop-input > input:focus {
+  border: 1px solid #62a8ea;
+  -webkit-transition: border .2s cubic-bezier(.645, .045, .355, 1);
+  transition: border .2s cubic-bezier(.645, .045, .355, 1);
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: transparent;
+  background-image: none;
+  color: rgb(0, 0, 0);
+}
+
+.login-form .el-form-item__label {
+  color: #c1c1c1;
+}
+
+.login-form .el-input__inner {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #c1c1c1;
+  border-radius: 0;
+  height: 28px;
+  color: #c1c1c1;
+  padding: 0;
+}
+
+.login-form .el-input {
+  /*width: 84%;*/
+}
+.login-form .el-form-item__content{
+  margin-left:0!important;
+}
+.el-main {
+  padding: 0;
+}
+
+/*导航栏*/
+.nav-bg .el-submenu .el-menu-item, .nav-bg .el-menu-item, .el-submenu__title {
+  height: 44px;
+  line-height: 44px;
+}
+
+.nav-bg .el-submenu__title i {
+  color: #97a3aa;
+}
+
+.nav-bg .el-submenu__icon-arrow {
+  transform: rotate(-90deg);
+  margin-top: -5px;
+}
+
+.nav-bg .el-submenu.is-opened > .el-submenu__title .el-submenu__icon-arrow {
+  transform: rotate(0deg);
+}
+
+.nav-bg .el-menu {
+  border: none;
+}
+
+.nav-bg .li-menu.is-active {
+  border-right: 4px solid #5eabf0;
+  background-color: #222c32 !important;;
+}
+
+.nav-bg .menu.is-active {
+  border-right: 4px solid #5eabf0;
+  background-color: #222c32 !important;;
+}
+
+.nav-bg .menu.is-active a {
+  color: #fff;
+}
+
+.nav-bg .li-menu.is-active a {
+  color: #fff;
+}
+
+/*页码*/
+.page > div:first-child {
+  margin-right: 18px;
+}
+
+.page > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#paging a {
+  height: 35px;
+  width: 33px;
+  display: inline-block;
+  border: 1px solid #e4eaec;
+  line-height: 35px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+  color: #76838f;
+  cursor: pointer;
+}
+
+#paging a.current {
+  border: 1px solid #62a8ea;
+  background-color: #62a8ea;
+  color: #ffffff;
+}
+
+#paging a.disabled {
+  color: #d1e0ef;
+}
+
+/*页码结束*/
+
+/*********** 操作通知弹窗 ************/
+
+.notice-model {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 10000;
+  min-width: 300px;
+  max-width: 400px;
+  height: 44px;
+  line-height: 44px;
+  background: #77d6e1;
+  color: #fff;
+  border-radius: 3px;
+  display: none;
+}
+
+.notice-model > i {
+  font-size: 24px;
+  padding: 0 5px 0 20px;
+}
+
+.notice-model > span {
+  display: inline-block;
+  line-height: 44px;
+  vertical-align: top;
+  height: 44px;
+  font-size: 14px;
+}
+
+.notice-model.success-notice {
+  background: #77d6e1;
+}
+
+.notice-model.error-notice {
+  background: #fa7a7a;
+}
+
+.notice-model.online-notice {
+  background: #fff5eb;
+  color: #f2a654;
+}
+
+/*dialog*/
+.dialogPop-deliver .el-dialog__header {
+  border-bottom: 1px solid #dcdfe6;
+}
+
+/*树形结构*/
+.menu .el-tree-node__content {
+  border-radius: 3px;
+  height: 34px;
+  border: 1px solid #e4eaec;
+  margin-bottom: 5px;
+
+}
+
+.menu .el-tree-node.is-expanded > .el-tree-node__children {
+  margin-left: 18px;
+  padding-left: 0;
+
+}
+
+.menu .el-tree-node.is-current > .el-tree-node__children {
+  margin-left: 18px;
+  padding-left: 0;
+
+}
+
+.el-popover {
+  padding: 0;
+}
+
+.right-group .el-checkbox-button__inner {
+  background-color: rgba(98, 168, 234, 0.1);
+  border-radius: 3px;
+  border: solid 1px #62a8ea;
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+  color: #62a8ea;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.right-group .el-checkbox-button:first-child .el-checkbox-button__inner, .right-group .el-checkbox-button:last-child .el-checkbox-button__inner {
+  border: 1px solid #62a8ea;
+  border-radius: 3px;
+}
+
+.right-group .el-checkbox-button.is-checked .el-checkbox-button__inner {
+  -webkit-box-shadow: -1px 0 0 0 #62a8ea;
+  box-shadow: -1px 0 0 0 #62a8ea;
+  background-color: #62a8ea;
+}
+.login-main .el-dialog__header{
+  padding:0;
+}
+
+.login-main .el-dialog__close{
+  display: none;
+}
+.login-main .el-dialog__body{
+  padding:50px 20px;
+}
+
+/*提交按钮*/
+.el-button--success{
+  color: #fff;
+  background-color: #46be8a;
+  border-color: #46be8a;
+}
+.el-button--success:focus, .el-button--success:hover {
+  background: #36ab7a;
+  border-color: #36ab7a;
+  color: #fff;
+}
+[v-clock]{
+  display: none;
+}
+.el-dialog__header{
+  text-align: center;
+  padding: 20px 20px 20px;
+  border-bottom: 1px solid #dcdfe6;
+  font-weight: bold;
+}
+.dialog-title{
+  font-size: 15px;
+  font-family: '微软雅黑';
+}
+.menu-tree .el-tree-node__content{
+  height: 34px;
+}
+.menu-tree .el-tree-node__expand-icon.is-leaf{
+  color: #c0c4cc;
+}
+ul a{
+  padding-left: 20px;
+}
+.yfsl-menu-ul a {
+  padding-left: 30px;
+}
+
+

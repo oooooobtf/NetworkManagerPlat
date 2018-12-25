@@ -1,0 +1,108 @@
+.vertical-center {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: #3f494f;
+}
+
+.pop-dialogue-windows {
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:99;
+    top: 0;
+    font-size: 14px;
+    left: 0;
+}
+
+.pop-dialogue-windows>div.vertical-center{
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 101;
+    border: 1px solid #d6dde2;
+    height: 90px;
+    padding: 10px;
+    width: 454px;
+    
+}
+.pop-dialogue-windows>div.red-theme{
+	background-color: #ffeeee;
+}
+.pop-dialogue-windows>div.yellow-theme{
+	background-color: rgb(255, 245, 235);;
+}
+.pop-dialogue-windows > div.dialogue-shadow-window{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background:rgba(0,0,0,.5);
+}
+
+div.red-theme>.dialogue-title{
+    position: relative;
+    color: #f96868;
+}
+div.yellow-theme>.dialogue-title{
+    position: relative;
+    color: rgb(241, 167, 84);
+}
+
+div.dialogue-title span.dialogue-hint{
+    line-height: 24px;
+}
+
+div.dialogue-title span{
+    display: inline-block;
+    vertical-align: top;
+}
+
+span.dialogue-close{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    cursor: pointer;
+}
+
+div.dialogue-title span:first-child{
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+div.dialogue-button{
+    margin-top: 13px;
+    margin-left: 21px;
+}
+
+div.dialogue-button span{
+    display: inline-block;
+    vertical-align: top;
+    width: 54px;
+    height: 31px;
+    border-radius: 2px;
+    line-height: 31px;
+    text-align: center;
+    cursor: pointer;
+}
+
+div.red-theme>.dialogue-button span.dialogue-confirm-btn{
+    background-color: #f96868;
+    color: #fff;
+    margin-right: 18px;
+}
+
+div.yellow-theme>.dialogue-button span.dialogue-confirm-btn{
+    background-color: rgb(241, 167, 84);;
+    color: #fff;
+    margin-right: 18px;
+}
+div.dialogue-button span.dialogue-cancle-btn{
+    color: #76838f
+}
