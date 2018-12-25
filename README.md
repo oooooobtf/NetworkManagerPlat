@@ -1,6 +1,7 @@
 # nmp
 
-> A Vue.js project
+> 网络后台管理平台
+其中涉及到菜单管理、权限管理、人员管理、角色管理、部门管理
 
 ## Build Setup
 
